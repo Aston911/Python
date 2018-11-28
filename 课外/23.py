@@ -1,14 +1,18 @@
 def fib(n):
-    n >= 1
-    '''fib 是斐波那契数列自定义函数
+    '''
+    fib 是斐波那契数列自定义函数
     n 是大于1的自然数，f(1)=1 f(2)=1,f(3)=2,
-    f(n)=f(n-1)+f(n-2)'''
+    f(n)=f(n-1)+f(n-2)
+    '''
     if n == 1:
         return 1
     if n == 2:
         return 1
     return fib(n-1) + fib(n-2)
-print(fib(6))
+for i in range(6):
+    i += 1
+    print(fib(i),end = ',')
+print('\n' ,'~ '* 10)
 def hano(n, a, b,c):
     '''
     汉诺塔的递归实现
@@ -38,5 +42,5 @@ a = "A"
 b = "B"
 c = "C"
 
-n = 2
+n = 3
 hano(n,a,b,c)
